@@ -1,0 +1,179 @@
+@charset "UTF-8";
+body {
+	font: 100%/1.2 Verdana, Geneva, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+td {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: #666666;
+	
+}
+
+
+.italic {
+	font-style: italic;
+}
+  
+
+.nav_crumb {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 10px;
+	font-style: normal;
+	font-weight: normal;
+	text-align: left;
+	color: #666666;
+}
+/* ~~ subject title in red ~~ */
+.subject_head {
+	font-size: 12px;
+	font-weight: bold;
+	color: #700;
+	line-height: 200%;
+	
+}
+
+/* ~~ title image ~~ */
+.toptitle {
+	display: block;
+    margin-right: auto
+}
+/* ~~ italicises the titles under thumbs. Should ideally be applied to rows, not whole table ~~ */
+.captions {
+	font: 100%/1.2 Verdana, Geneva, sans-serif;
+	font-style: italic;
+	font-size: 9px;
+	margin: 11px;
+	text-align: center;	
+}
+.date {
+	font: 100%/1.2 Verdana, Geneva, sans-serif;
+	font-style: normal;
+	color: #999999;
+	text-align: center;
+	line-height: 21px;
+}
+
+/* ~~ this is applied on some money pages. Should consolidate all to use either this or captions ~~ */
+.imgtitle {
+	font: 100%/1.2 Verdana, Geneva, sans-serif;
+	font-size: 9px;
+	margin: 11px;
+	font-style: italic;
+	text-align: center;
+}
+/* ~~ intended for info text used in table ~~ */
+.bodytext_1 {
+	font: 100%/1.2 Verdana, Geneva, sans-serif;
+	font-style: normal;
+	font-size: 10px;
+	margin: 11px;
+	text-align: left;
+}
+/* ~~ almost the same as bodytext_1 for now - slightly bigger. Able to change when needed ~~ */
+.bodytext_2 {
+	font: 100%/1.2 Verdana, Geneva, sans-serif;
+	font-style: normal;
+	font-size: 11px;
+	text-align: left;
+}
+/* ~~ box containing subject against grey background. Variants include one with black bg and a shorter box of 300px width ~~ */
+#infobox_1 {
+	width: 500px;
+	background: #F0F0F0;
+	padding: 8px 10px 8px 20px;
+	font: 100%/1.3 Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	text-align: left;
+}
+
+#infobox_1_black {
+	width: auto
+	background: #000000;
+	padding: 8px 10px 8px 20px;
+	font: 100%/1.3 Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	text-align: left;
+	text-decoration-color: white
+}
+
+#infobox_1_narrow {
+	width: 300px;
+	background: #F0F0F0;
+	padding: 8px 10px 8px 20px;
+	font: 100%/1.3 Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	text-align: left;
+}
+
+
+/* ~~ Top row containing title bar and breadcrumb ~~ */
+#row_1 {
+	width: 100%;
+	background: #ffffff;
+	padding: 15px 10px 10px 20px;
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	text-align: left;
+}
+
+
+/* ~~ The subject row ~~ */
+#row_2 {
+	width: 1000px;
+	padding: 10px 10px 10px 0px;
+ 	margin-right: 20px;
+	margin-left: 15px;
+
+
+	
+}
+
+/* ~~ The row containing the main table of thumbs ~~ */
+#row_3 {
+	background: #ffffff;
+	width: 100%;
+	padding: 15px 10px 15px 20px;
+	font: 100%/1.2 Verdana, Geneva, sans-serif;
+	font-size: 11px;
+}
+
+/* ~~ an image used for the background of the subject row ~~ */
+#row_2_bg {
+	width: 100%;
+	background: #F0F0F0;
+	padding: 15px 10px 15px 10px;
+	background-image: url(../img/spec/money_1.jpg);
+	
+}
+
+
+/* ~~ Element/tag selectors ~~ */
+
+a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
+	border: none;
+}
+
+
+
+
+a:hover {
+	color: #FF6600;
+	font-weight: bold;
+	text-decoration: none;
+}
+a:link {
+	color: #336699;
+	font-weight: bold;
+	text-decoration: none;
+}
+a:visited {
+	font-weight: bold;
+	color: #6699CC;
+	text-decoration: none;
+}
+a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
+	text-decoration: none;
+	color: #FF6600;
+	font-style: bold;
+}
